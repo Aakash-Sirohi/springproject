@@ -1,7 +1,6 @@
 package com.example.springproject.ui.controller;
 
 
-import com.example.springproject.service.UserService;
 import com.example.springproject.service.impl.UserServiceImpl;
 import com.example.springproject.shared.dto.UserDto;
 import com.example.springproject.ui.model.request.UserDetailsRequestModel;

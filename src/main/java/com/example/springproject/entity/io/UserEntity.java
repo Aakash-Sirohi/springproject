@@ -1,14 +1,12 @@
 package com.example.springproject.entity.io;
 
-import com.sun.istack.NotNull;
+//import com.sun.istack.NotNull;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity(name="users")
+@Entity
+@Table(name="users")
 public class UserEntity implements Serializable {
     private static final long serialVersionUID = 345345345345L;
 
@@ -20,11 +18,11 @@ public class UserEntity implements Serializable {
     private String userId;
 
 
-    @Column
+    @Column(nullable = false)
     private String firstname;
-    @Column
+    @Column(nullable = false)
     private String lastname;
-    @Column
+    @Column(nullable = false)
     private String email;
 
     @Column(nullable = false)
